@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+<script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        alert('Dobrodosli na  ABOUT stranicu!');
+    });
+</script>
+
+<div class="btn1">
+    <label>Ime:</label><br>
+    <input type="text" id="ime"><br>
+</div>
+<div class="btn2">
+    <label>Prezime:</label><br>
+    <input type="text" id="prezime"><br>
+</div>
+
+<div class="botun">
+    <input type="button" id="botun1" value="Unesi">
+</div>
+
+<script>
+    $(document.getElementById("botun1")).click(function () {
+        /*function ShowAlert() {*/
+            //Dohvatiti vrijednosti iz oba inputa u varijable ime i prezime...
+        var lbltxt1 = document.getElementById("ime").value;
+        var lbltxt2 = document.getElementById("prezime").value;
+
+        alert(lbltxt1 + ' ' + lbltxt2);
+        /*}*/
+
+    });
+        
+</script>
+

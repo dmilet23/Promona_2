@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Gradovi";
+}
+
+<h2>Gradovi</h2>
+<ul>
+    @foreach (var grad in ViewBag.GradoviLista)
+    {
+        <li>@grad</li>
+    }
+</ul>
